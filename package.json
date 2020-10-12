@@ -4,10 +4,12 @@
   "description": "This is a starter for traspiling scss and ES6+ to css and Javascript via webpack 4",
   "main": "index.js",
   "scripts": {
-    "build:dev": "cross-env NODE_ENV=development webpack --mode development",
-    "build:prod": "cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
     "start": "webpack-dev-server --mode development",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Vikas yadav",
   "license": "MIT",
@@ -25,6 +27,7 @@
     "cross-env": "^7.0.0",
     "css-loader": "^3.4.2",
     "file-loader": "^5.0.2",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.1",

@@ -1,0 +1,23 @@
+.header {
+    background-color: $color-primary;
+    background: rgb(229, 91, 143);
+    background: linear-gradient(
+        120deg,
+        rgba(229, 91, 143, 1) 0%,
+        rgba(231,107,154,1) 50%,
+        rgba(229, 91, 143, 1) 100%
+    );
+    color: $color-white;
+    text-align: center;
+    padding: $padding-default;
+
+    &__logo-box {
+        margin: 0 auto 3rem auto;
+        width: 60%;
+    }
+
+    &__wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

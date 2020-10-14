@@ -9,20 +9,34 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./assets/images/logo.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
+    <header class="menu">
+        <div class="menu__wrap">
+            <img src="./assets/images/logo.svg" class="menu__logo" alt="Logo">
+            <input type="checkbox" class="menu__checkbox" id="menu__checkbox">
+            <nav class="menu__links">
+                <ul>
+                    <li><a href="#">Diferenciais</a></li>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <label for="menu__checkbox">
+                <i class="fa fa-bars menu__icon"></i>
+            </label>
+        </div>
+    </header>
+
     <header class="header">
         <div class="header__wrapper">
-            <figure class="header__logo-box">
-                <img src="./assets/images/logo.svg" alt="logo" class="responsive">
-            </figure>
-            <h1 class="heading-primary">Descubra o <mark>segredo das pessoas que DOMINARAM</mark> o Cálculo de
-                Medicaçãos
-            </h1>
+            <h1 class="heading-primary"><strong>Cálculo de Medicação</strong> tem feito você bombar nas provas</h1>
 
             <div class="header__video">
                 <div class="videowrapper">
@@ -54,7 +68,8 @@
                 </div>
                 <div class="reasons__box">
                     <div class="reasons__box--number">4</div>
-                    <div class="reasons__box--why">Acreditam que Regra de Três é muito difícil e que nunca conseguirão aprender</div>
+                    <div class="reasons__box--why">Acreditam que Regra de Três é muito difícil e que nunca conseguirão
+                        aprender</div>
                 </div>
                 <div class="reasons__box">
                     <div class="reasons__box--number">5</div>

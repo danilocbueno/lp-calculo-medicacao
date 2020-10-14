@@ -1,0 +1,104 @@
+.menu {
+    height: 9rem;
+    background-color: $color-primary;
+    background: rgb(229, 91, 143);
+    background: linear-gradient(
+        90deg,
+        rgba(229, 91, 143, 1) 0%,
+        rgba(229, 91, 143, 1) 50%,
+         rgba(231,107,154,1) 100%
+    );
+    padding: 2rem 0;
+    text-transform: uppercase;
+    border-bottom: solid 1px darken($color-primary, 10%);
+    box-shadow: 0px 1px 1px darken($color-primary, 10%);
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        margin: auto;
+        max-width: 1200px;
+    }
+
+    &__logo {
+        height: 5rem;
+    }
+
+    &__icon {
+        font-size: 3rem;
+        color: $color-white;
+        line-height: 5rem;
+        cursor: pointer;
+
+        &:hover {
+            color: #c72362;
+        }
+
+        @media (min-width: 768px) {
+            display: none;   
+        }
+    }
+
+    &__links {
+        position: absolute;
+        /*background-color: darken($color-primary, 40%);*/
+        background-color: #22292F;
+        top: 8.9rem;
+        left: 0;
+        width: 100vw;
+        z-index: 1000;
+
+        @media (min-width: 768px) {
+            position: static;
+            background-color: transparent;
+        }
+
+        ul {
+            list-style-type: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: all .5s;
+
+            @media (min-width: 768px) {
+                max-height: 70rem;
+                text-align: right;
+            }
+
+            li {
+                padding: 0 15px;
+
+                @media (min-width: 768px) {
+                    display: inline-flex;
+                    padding-left: 20px;
+                    font-size: 1.5rem;
+                }
+
+                a {
+                    display: block;
+                    padding: 12px;
+                    max-width: 100%;;
+                    /* Add your custom styles below to change appearance of links */
+                    color: $color-white;
+                    text-decoration: none;
+                    letter-spacing: 0.05em;
+
+                    &:hover, &:focus {
+                        color: $color-black-light;
+                    }
+                }
+            }
+        }
+    }
+
+    &__checkbox {
+        display: none;
+
+        &:checked ~ nav ul {
+                max-height: 100vh;
+                padding: 15px 0;
+                overflow: hidden;
+                transition: all 0.5s;
+        }
+    }
+}

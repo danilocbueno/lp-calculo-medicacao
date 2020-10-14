@@ -9,7 +9,8 @@
     "start": "webpack-dev-server --mode development",
     "typecheck": "tsc",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "clean" : "gh-pages-clean"
   },
   "author": "Vikas yadav",
   "license": "MIT",

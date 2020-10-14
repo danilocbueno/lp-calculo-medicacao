@@ -1,13 +1,4 @@
-.header {
-    background-color: $color-primary;
-    background: rgb(229, 91, 143);
-    background: linear-gradient(
-        120deg,
-        rgba(229, 91, 143, 1) 0%,
-        rgba(231,107,154,1) 50%,
-        rgba(229, 91, 143, 1) 100%
-    );
-    color: $color-white;
+.header {    
     text-align: center;
     padding: $padding-default;
 

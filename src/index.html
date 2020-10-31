@@ -13,6 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans|Encode+Sans+Expanded&display=swap" rel="stylesheet">
 
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+
 </head>
 
 <body>
@@ -207,7 +211,7 @@
                 <h2 class="heading-secondary">Entre em contato</h2>
                 <p class="u-text-muted text-center">Mande sua mensagem e tire suas dúvidas.</p>
 
-                <form id="contactForm" name="sentMessage">
+                <form method="POST" action="mail/contact_me.php">
                     <div class="form__group">
                         <input class="form__input" id="name" type="text" placeholder="Seu nome *" required="required"
                             data-validation-required-message="Por favor, informe seu nome." aria-invalid="false">
@@ -224,17 +228,15 @@
                             aria-invalid="false">
                         <p class="help-block text-danger"></p>
                     </div>
-            </div>
-            <div class="form__group">
-                <textarea class="form__input" id="message" placeholder="Sua mensagem *" required="required"
-                    data-validation-required-message="Por favor, escreva sua mensagem." aria-invalid="false"></textarea>
-                <p class="help-block text-danger"></p>
-            </div>
-            <div class="col-lg-12 text-center"></div>
-            <div id="success"></div>
-            <button id="sendMessageButton" class="btn btn--primary" type="submit">Enviar</button>
-            </div>
-            </form>
+                    <div class="form__group">
+                        <textarea class="form__input" id="message" placeholder="Sua mensagem *" required="required"
+                            data-validation-required-message="Por favor, escreva sua mensagem."
+                            aria-invalid="false"></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div id="success"></div>
+                    <button id="sendMessageButton" class="btn btn--primary" type="submit">Enviar</button>
+                </form>
             </div>
         </section>
 

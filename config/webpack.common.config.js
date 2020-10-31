@@ -65,7 +65,7 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Webpack 4 Starter',
+            title: 'Quero uma Vaga na Enfermagem',
             template: './src/index.html',
             inject: true,
             minify: {

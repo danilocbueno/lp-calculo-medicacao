@@ -80,6 +80,10 @@ module.exports = {
             from: './src/assets/images',
             to: 'assets/images'
         }]),
+        new CopyWebpackPlugin([{
+            from: './src/mail.php',
+            to: 'mail.php'
+        }]),
         new CleanWebpackPlugin()
     ]
 }

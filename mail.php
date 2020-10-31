@@ -26,8 +26,9 @@ $headers .= "Reply-To: $email_address";
 $result = mail($to,$email_subject,$email_body,$headers);
 
 if($result) {
-   return "Mensagem enviada com sucesso!";
+   echo "Mensagem enviada com sucesso!";
 } else {
-   return "Erro ao enviar mensagem!";
+   echo "Erro ao enviar mensagem!";
 }
+return true;
 ?>

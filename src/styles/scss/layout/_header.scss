@@ -1,6 +1,7 @@
 .header {    
-    text-align: center;
+text-align: center;
     padding: $padding-default;
+    position: relative;
 
     &__logo-box {
         margin: 0 auto 3rem auto;
@@ -9,6 +10,53 @@
 
     &__wrapper {
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 0 auto;;
+    }
+
+    &__main {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include respond(tab-port) {
+            flex-direction: row;
+        }
+
+        &--video {
+            margin-bottom: 5rem;
+
+            @include respond(tab-port) {
+                width: 60%;
+            }
+        }
+
+        &--text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @include respond(tab-port) {
+                width: 35%;
+            }
+        }
+
+        &--icon {
+            background-color: rgba($color-black-light, .95);
+            color: $color-white;
+            font-size: 2.5rem;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &>span {
+                margin-left: 1rem;
+                display: inline-block;
+                line-height: 4rem;
+            }
+        }
     }
 }

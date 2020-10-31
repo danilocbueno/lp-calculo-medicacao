@@ -1,28 +1,47 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-family: 'Encode Sans', sans-serif;
     line-height: 1.7;
+    color: #212529;
+
+    p, li, summary{
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.75;
+    }
 }
 
 .heading-primary {
-    font-size: 5rem;
-    font-weight: 900;
-    line-height: 8rem;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: initial;
     margin-bottom: 3rem;
+    color: $color-black-light;
+    text-shadow: 1rem 1rem 2rem rgba(black,.3);
 
     mark {
         font-weight: 500;
-        background-color: $color-primary-dark;
-        color:$color-white;
+        background-color: rgba($color-primary-dark, .2);
+        color:$color-black-light;
     }
 }
 
 
 .heading-secondary {
     font-size: 3.5rem;
-    font-weight: 300;
+    font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 3rem;
     text-align: center;
-    text-shadow: 1px 1px 2px $color-grey-dark;
+    color:#212529;
+    text-transform: uppercase;
+}
+
+.heading-quaternary {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    font-family: 'Encode Sans Expanded',sans-serif;
 }

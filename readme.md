@@ -30,3 +30,12 @@ The app will automatically reload if you change any of the source files.
 > Run `npm run build:prod` to build the project in production mode. 
 
 The build artifacts will be stored in the `dist/` directory.
+
+
+### Bases
+
+https://queroumavaganaenfermagem.com.br/site/
+
+http://queroumavaganaenfermagem.contato.site/dominandocalculo
+
+https://1stwebdesigner.com/how-to-create-a-responsive-dropdown-navigation-using-only-css/

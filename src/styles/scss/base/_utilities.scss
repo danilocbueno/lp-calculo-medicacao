@@ -17,6 +17,15 @@
     height: auto;
 }
 
+.container {
+    max-width: 1200px;
+    margin:auto;
+}
+
+.text-white {
+    color: $color-white;
+}
+
 .u-center-text {
     text-align: center;
 }
@@ -35,4 +44,8 @@
 
 .u-margin-top-huge {
     margin-top: 10rem;
+}
+
+.u-text-muted {
+    color: #6c757d!important;
 }

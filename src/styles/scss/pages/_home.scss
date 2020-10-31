@@ -1,8 +1,61 @@
-main {
-    max-width: 1200px;
-    margin:auto;
+.section-reasons {
+    display: none;
+    margin-top: 3rem;
+    text-align: center;
 }
 
-.section-reasons {
+.section-modules {
+    display: none;
     margin-top: 3rem;
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #252830;
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#252830, 0.9), 
+        rgba($color-black-light, 0.9)), 
+        url("/assets/images/header-bg.jpg");
+        background-size: cover;
+}
+
+
+.section-about {
+    padding: 5rem;
+    text-align: center;
+
+    img {
+        width: 25rem;
+        margin: 2rem;
+        border: 7px solid rgba(0,0,0,.1)
+    }
+}
+
+.section-laws {
+    background-color: #f8f9fa;
+    padding: 5rem 3rem;
+    text-align: justify;
+
+    ul {
+        margin-left: 5rem;
+    }
+}
+
+.section-contact {
+    padding: 5rem 3rem;
+    background-color: #252830;
+    color: white;
+    text-align: center;
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#252830, 0.9), 
+        rgba($color-black-light, 0.9)), 
+        url("/assets/images/header-bg.jpg");
+        background-size: cover;
+
+    h2 {
+        color:$color-white;
+        margin-bottom: 0;
+    }
 }

@@ -1,0 +1,25 @@
+.modules {
+
+    text-align: center;
+    color: $color-white;
+
+    &__heading {
+        display: inline-block;
+        font-size: 6rem;
+        font-weight: 200;
+        background-color: #007CC5;
+        border-radius: 100%;
+        width: 10rem;
+        height: 10rem;
+        line-height: 9.5rem;
+        margin-bottom: 1.5rem;
+
+        box-shadow: 1px 1px 6px $color-black-light;
+    }
+
+    &__text {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        text-shadow: 1px 1px 6px $color-black-light;
+    }
+}

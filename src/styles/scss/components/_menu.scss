@@ -84,7 +84,10 @@
                     letter-spacing: 0.05em;
 
                     &:hover, &:focus {
-                        color: $color-black-light;
+                        color: $color-white;
+                        transform: scale(1.1);
+                        transition: all .3s;
+                        text-shadow: .5px .5px 10px lighten($color-primary, 30%);
                     }
                 }
             }
